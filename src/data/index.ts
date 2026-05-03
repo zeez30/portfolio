@@ -47,8 +47,8 @@ export const projects: Project[] = [
     description:
       'Designed and built from scratch. Clean dark editorial aesthetic, single-page scroll with smooth section transitions. TypeScript throughout, zero component library dependencies.',
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
-    github: 'https://github.com/zeez30/zeez30.github.io',
-    live: 'https://zeez30.github.io',
+    github: 'https://github.com/zeez30/portfolio#',
+    live: 'https://portfolio-omega-liart-grlu9dfom2.vercel.app',
     status: 'live',
   },
 ];
