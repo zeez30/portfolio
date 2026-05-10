@@ -9,10 +9,10 @@ const statusLabel: Record<Project['status'], { text: string; color: string }> = 
 function ProjectCard({ project }: { project: Project }) {
   const status = statusLabel[project.status];
   return (
-    <div className="group border-gradient rounded-lg p-6 bg-surface flex flex-col gap-4 hover:bg-[#111827] transition-colors duration-200">
+    <div className="group border-gradient rounded-lg p-8 bg-surface flex flex-col gap-4 hover:bg-[#2a1520] transition-colors duration-200">
       {/* Header */}
       <div className="flex items-start justify-between gap-3">
-        <h3 className="font-display font-bold text-textprimary text-lg group-hover:text-accent transition-colors">
+        <h3 className="font-display font-bold text-textprimary text-xl group-hover:text-accent transition-colors">
           {project.title}
         </h3>
         <span className={`font-mono text-[10px] px-2 py-1 rounded border whitespace-nowrap ${status.color}`}>
@@ -21,7 +21,7 @@ function ProjectCard({ project }: { project: Project }) {
       </div>
 
       {/* Description */}
-      <p className="font-body text-textsecondary text-sm leading-relaxed flex-1">
+      <p className="font-body text-textsecondary text-base leading-relaxed flex-1">
         {project.description}
       </p>
 
@@ -30,7 +30,7 @@ function ProjectCard({ project }: { project: Project }) {
         {project.tags.map((tag) => (
           <span
             key={tag}
-            className="font-mono text-[10px] px-2 py-1 rounded bg-bg border border-border text-textsecondary"
+            className="font-mono text-xs px-3 py-1.5 rounded bg-bg border border-border text-textsecondary"
           >
             {tag}
           </span>
@@ -74,12 +74,12 @@ export default function Projects() {
           <span className="font-mono text-xs text-accent tracking-widest uppercase mb-4 block">
             03 / Projects
           </span>
-          <h2 className="font-display font-bold text-3xl md:text-4xl text-textprimary">
+          <h2 className="font-display font-bold text-4xl md:text-5xl text-textprimary">
             Things I've built
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 gap-8">
           {projects.map((p) => (
             <ProjectCard key={p.id} project={p} />
           ))}

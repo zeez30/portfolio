@@ -2,21 +2,21 @@ export default function Contact() {
   return (
     <section id="contact" className="py-28 border-t border-border">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center">
           <span className="font-mono text-xs text-accent tracking-widest uppercase mb-4 block">
             04 / Contact
           </span>
-          <h2 className="font-display font-bold text-3xl md:text-4xl text-textprimary mb-6">
+          <h2 className="font-display font-bold text-4xl md:text-5xl text-textprimary mb-6">
             Let's work together
           </h2>
-          <p className="font-body text-textsecondary text-lg leading-relaxed mb-10">
+          <p className="font-body text-textsecondary text-xl leading-relaxed mb-10">
             I'm actively looking for graduate software engineering roles from summer 2026.
             If you're working on something interesting or just want to connect, my inbox is open.
           </p>
 
           <a
             href="mailto:syeda@zaidi.dev"
-            className="inline-block px-8 py-4 bg-accent text-bg font-display font-semibold rounded hover:bg-accent/90 transition-all duration-200 tracking-wide mb-10"
+            className="inline-block px-10 py-5 bg-accent text-bg font-display font-semibold text-lg rounded hover:bg-accent/90 transition-all duration-200 tracking-wide mb-10"
           >
             syeda@zaidi.dev
           </a>

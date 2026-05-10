@@ -22,7 +22,7 @@ export default function Hero() {
       />
 
       <div className="relative max-w-6xl mx-auto px-6 pt-24 pb-16">
-        <div className="max-w-3xl">
+        <div className="max-w-4xl">
           {/* Tag line */}
           <div className="fade-up flex items-center gap-3 mb-8">
             <span className="font-mono text-sm text-accent tracking-widest uppercase">
@@ -36,14 +36,14 @@ export default function Hero() {
 
           {/* Name */}
           <h1 className="fade-up fade-up-delay-1 font-display font-extrabold leading-none tracking-tight mb-6"
-            style={{ fontSize: 'clamp(3rem, 8vw, 6rem)' }}
+            style={{ fontSize: 'clamp(4rem, 9vw, 7.5rem)' }}
           >
             <span className="text-textprimary">Syeda</span>{' '}
             <span className="text-gradient">Zaidi</span>
           </h1>
 
           {/* Descriptor */}
-          <p className="fade-up fade-up-delay-2 font-body text-textsecondary text-lg md:text-xl leading-relaxed max-w-2xl mb-10">
+          <p className="fade-up fade-up-delay-2 font-body text-textsecondary text-xl md:text-2xl leading-relaxed max-w-2xl mb-10">
             I build full-stack web apps and Android experiences with a focus on clean
             architecture, thoughtful UX, and code that holds up in production.
             MEng Software Engineering, Edinburgh Napier University.
@@ -53,13 +53,13 @@ export default function Hero() {
           <div className="fade-up fade-up-delay-3 flex flex-wrap gap-4">
             <button
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-6 py-3 bg-accent text-bg font-display font-semibold text-sm rounded hover:bg-accent/90 transition-all duration-200 tracking-wide"
+              className="px-8 py-4 bg-accent text-bg font-display font-semibold text-base rounded hover:bg-accent/90 transition-all duration-200 tracking-wide"
             >
               View my work
             </button>
             <a
               href="mailto:syeda@zaidi.dev"
-              className="px-6 py-3 border border-border text-textprimary font-display font-semibold text-sm rounded hover:border-accent hover:text-accent transition-all duration-200 tracking-wide"
+              className="px-8 py-4 border border-border text-textprimary font-display font-semibold text-base rounded hover:border-accent hover:text-accent transition-all duration-200 tracking-wide"
             >
               Get in touch
             </a>

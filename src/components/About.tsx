@@ -9,13 +9,13 @@ const timeline = [
 export default function About() {
   return (
     <section id="about" className="py-28 max-w-6xl mx-auto px-6">
-      <div className="grid md:grid-cols-2 gap-16 items-start">
+      <div className="grid md:grid-cols-2 gap-20 items-start">
         {/* Left — text */}
         <div>
           <span className="font-mono text-xs text-accent tracking-widest uppercase mb-4 block">
             01 / About
           </span>
-          <h2 className="font-display font-bold text-3xl md:text-4xl text-textprimary mb-6 leading-tight">
+          <h2 className="font-display font-bold text-4xl md:text-5xl text-textprimary mb-6 leading-tight">
             Software engineer,<br />
             <span className="text-gradient">full-stack</span>
           </h2>
@@ -38,17 +38,17 @@ export default function About() {
 
           <div className="mt-8 flex gap-8">
             <div>
-              <div className="font-display font-bold text-2xl text-accent">4+</div>
+              <div className="font-display font-bold text-3xl text-accent">4+</div>
               <div className="font-mono text-xs text-textsecondary mt-1">Years building</div>
             </div>
             <div className="w-px bg-border" />
             <div>
-              <div className="font-display font-bold text-2xl text-accent">MEng</div>
+              <div className="font-display font-bold text-3xl text-accent">MEng</div>
               <div className="font-mono text-xs text-textsecondary mt-1">Software Engineering</div>
             </div>
             <div className="w-px bg-border" />
             <div>
-              <div className="font-display font-bold text-2xl text-accent">2</div>
+              <div className="font-display font-bold text-3xl text-accent">2</div>
               <div className="font-mono text-xs text-textsecondary mt-1">Platforms shipped</div>
             </div>
           </div>
