@@ -21,7 +21,7 @@
   }
   .border-gradient {
     border: 1px solid transparent;
-    background: linear-gradient(#30343f, #30343f) padding-box,
+    background: linear-gradient(#2a1520, #2a1520) padding-box,
                 linear-gradient(135deg, rgba(234,99,140,0.5), rgba(137,2,62,0.3)) border-box;
   }
 }
