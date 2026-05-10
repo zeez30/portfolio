@@ -5,8 +5,8 @@
 @layer base {
   html { scroll-behavior: smooth; }
   body {
-    background-color: #2a1418;
-    color: #dfe2cf;
+    background-color: #dfe2cf;
+    color: #1e0f12;
     font-family: 'DM Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
   }
@@ -14,21 +14,21 @@
 
 @layer utilities {
   .text-gradient {
-    background: linear-gradient(135deg, #ffadc6 0%, #dda3b2 100%);
+    background: linear-gradient(135deg, #764248 0%, #dda3b2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   .border-gradient {
     border: 1px solid transparent;
-    background: linear-gradient(#3d2228, #3d2228) padding-box,
-                linear-gradient(135deg, rgba(255,173,198,0.5), rgba(221,163,178,0.2)) border-box;
+    background: linear-gradient(#e3c5bb, #e3c5bb) padding-box,
+                linear-gradient(135deg, rgba(118,66,72,0.3), rgba(221,163,178,0.5)) border-box;
   }
 }
 
 ::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: #2a1418; }
-::-webkit-scrollbar-thumb { background: #764248; border-radius: 2px; }
+::-webkit-scrollbar-track { background: #dfe2cf; }
+::-webkit-scrollbar-thumb { background: #dda3b2; border-radius: 2px; }
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }

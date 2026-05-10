@@ -4,14 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg:            '#2a1418',   // derived dark rose
-        surface:       '#3d2228',   // derived mid rose
-        border:        '#764248',   // burnt-rose
-        accent:        '#ffadc6',   // baby-pink
-        'accent-dim':  '#dda3b2',   // pink-mist
+        bg:            '#dfe2cf',   // eggshell
+        surface:       '#e3c5bb',   // almond-silk
+        border:        '#dda3b2',   // pink-mist
+        accent:        '#764248',   // burnt-rose
+        'accent-dim':  '#a05a62',   // derived mid rose
         violet:        '#dda3b2',   // pink-mist
-        textprimary:   '#dfe2cf',   // eggshell
-        textsecondary: '#e3c5bb',   // almond-silk
+        textprimary:   '#1e0f12',   // near-black rose
+        textsecondary: '#8b5a62',   // muted rose
       },
       fontFamily: {
         display: ['Syne', 'sans-serif'],

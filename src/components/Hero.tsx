@@ -8,7 +8,7 @@ export default function Hero() {
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse, rgba(255,173,198,0.10) 0%, rgba(221,163,178,0.04) 40%, transparent 70%)',
+          background: 'radial-gradient(ellipse, rgba(118,66,72,0.08) 0%, rgba(221,163,178,0.04) 40%, transparent 70%)',
         }}
       />
 
@@ -16,7 +16,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 pointer-events-none opacity-[0.03]"
         style={{
-          backgroundImage: 'linear-gradient(#ffadc6 1px, transparent 1px), linear-gradient(90deg, #ffadc6 1px, transparent 1px)',
+          backgroundImage: 'linear-gradient(#764248 1px, transparent 1px), linear-gradient(90deg, #764248 1px, transparent 1px)',
           backgroundSize: '60px 60px',
         }}
       />
