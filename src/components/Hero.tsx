@@ -8,7 +8,7 @@ export default function Hero() {
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse, rgba(195,70,195,0.10) 0%, rgba(129,140,248,0.04) 40%, transparent 70%)',
+          background: 'radial-gradient(ellipse, rgba(255,173,198,0.10) 0%, rgba(221,163,178,0.04) 40%, transparent 70%)',
         }}
       />
 
@@ -16,7 +16,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 pointer-events-none opacity-[0.03]"
         style={{
-          backgroundImage: 'linear-gradient(#0afbff 1px, transparent 1px), linear-gradient(90deg, #0afbff 1px, transparent 1px)',
+          backgroundImage: 'linear-gradient(#ffadc6 1px, transparent 1px), linear-gradient(90deg, #ffadc6 1px, transparent 1px)',
           backgroundSize: '60px 60px',
         }}
       />
@@ -58,7 +58,7 @@ export default function Hero() {
               View my work
             </button>
             <a
-              href="mailto:syedazaidii@outlook.com"
+              href="mailto:syeda@zaidi.dev"
               className="px-6 py-3 border border-border text-textprimary font-display font-semibold text-sm rounded hover:border-accent hover:text-accent transition-all duration-200 tracking-wide"
             >
               Get in touch
@@ -86,7 +86,7 @@ export default function Hero() {
             </a>
             <span className="w-px h-4 bg-border" />
             <a
-              href="mailto:syedazaidii@outlook.com"
+              href="mailto:syeda@zaidi.dev"
               className="font-mono text-xs text-textsecondary hover:text-accent transition-colors tracking-wide"
             >
               Email ↗

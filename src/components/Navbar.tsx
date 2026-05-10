@@ -44,7 +44,7 @@ export default function Navbar() {
             </button>
           ))}
           <a
-            href="mailto:syedazaidii@outlook.com"
+            href="mailto:syeda@zaidi.dev"
             className="font-mono text-sm px-4 py-1.5 border border-accent text-accent rounded hover:bg-accent hover:text-bg transition-all duration-200"
           >
             Hire me

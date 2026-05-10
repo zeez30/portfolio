@@ -15,10 +15,10 @@ export default function Contact() {
           </p>
 
           <a
-            href="mailto:syedazaidii@outlook.com"
+            href="mailto:syeda@zaidi.dev"
             className="inline-block px-8 py-4 bg-accent text-bg font-display font-semibold rounded hover:bg-accent/90 transition-all duration-200 tracking-wide mb-10"
           >
-            syedazaidii@outlook.com
+            syeda@zaidi.dev
           </a>
 
           <div className="flex justify-center gap-8 pt-8 border-t border-border">
