@@ -13,7 +13,7 @@ export default function Navbar() {
   }, []);
 
   const scrollTo = (id: string) => {
-    document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: 'auto' });
     setMenuOpen(false);
   };
 
@@ -23,10 +23,10 @@ export default function Navbar() {
         scrolled ? 'bg-bg/90 backdrop-blur-md border-b border-border' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="page-grid h-16 flex items-center justify-between">
         {/* Logo */}
         <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          onClick={() => window.scrollTo({ top: 0, behavior: 'auto' })}
           className="font-display font-bold text-lg tracking-tight text-textprimary hover:text-accent transition-colors"
         >
           SZ<span className="text-accent">.</span>
@@ -45,7 +45,7 @@ export default function Navbar() {
           ))}
           <a
             href="mailto:syeda@zaidi.dev"
-            className="font-mono text-sm px-4 py-1.5 border border-accent text-accent rounded hover:bg-accent hover:text-bg transition-all duration-200"
+            className="editorial-link"
           >
             Hire me
           </a>
@@ -53,9 +53,11 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden text-textsecondary hover:text-accent transition-colors"
+          className="md:hidden min-h-11 min-w-11 flex items-center justify-center text-textsecondary hover:text-accent transition-colors"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
+          aria-controls="mobile-navigation"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {menuOpen
@@ -66,8 +68,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      {menuOpen && (
-        <div className="md:hidden bg-surface border-b border-border px-6 py-4 flex flex-col gap-4">
+        <nav id="mobile-navigation" aria-label="Mobile navigation" hidden={!menuOpen} className={`${menuOpen ? 'flex' : 'hidden'} md:hidden bg-surface border-b border-border page-grid py-4 flex-col gap-4`}>
           {links.map((l) => (
             <button
               key={l}
@@ -77,8 +78,7 @@ export default function Navbar() {
               {l}
             </button>
           ))}
-        </div>
-      )}
+        </nav>
     </header>
   );
 }

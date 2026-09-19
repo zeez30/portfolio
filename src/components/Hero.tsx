@@ -2,76 +2,54 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-[min(56rem,100svh)] flex items-center"
     >
-      {/* Background orb */}
-      <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
-        style={{
-          background: 'radial-gradient(ellipse, rgba(234,99,140,0.12) 0%, rgba(137,2,62,0.05) 40%, transparent 70%)',
-        }}
-      />
-
-      {/* Grid overlay */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-[0.03]"
-        style={{
-          backgroundImage: 'linear-gradient(#ea638c 1px, transparent 1px), linear-gradient(90deg, #ea638c 1px, transparent 1px)',
-          backgroundSize: '60px 60px',
-        }}
-      />
-
-      <div className="relative max-w-6xl mx-auto px-6 pt-24 pb-16">
-        <div className="max-w-4xl">
+      <div className="relative page-grid pt-32 pb-28">
+        <div className="max-w-4xl mx-auto text-center">
           {/* Tag line */}
-          <div className="fade-up flex items-center gap-3 mb-8">
-            <span className="font-mono text-sm text-accent tracking-widest uppercase">
-              Software Engineer
-            </span>
-            <span className="block w-12 h-px bg-accent opacity-50" />
-            <span className="font-mono text-sm text-textsecondary">
-              Available 2026
+          <div className="fade-up flex flex-wrap items-center justify-center gap-x-4 gap-y-2 mb-10">
+            <span className="font-mono text-xs text-textsecondary tracking-widest uppercase">
+              SOFTWARE ENGINEERING · EDINBURGH
             </span>
           </div>
 
           {/* Name */}
-          <h1 className="fade-up fade-up-delay-1 font-display font-extrabold leading-none tracking-tight mb-6"
-            style={{ fontSize: 'clamp(4rem, 9vw, 7.5rem)' }}
+          <h1 className="fade-up fade-up-delay-1 font-display font-bold leading-none tracking-tight mb-2"
+            style={{ fontSize: 'clamp(2.25rem, 7.6vw, 5.5rem)' }}
           >
-            <span className="text-textprimary">Syeda</span>{' '}
-            <span className="text-gradient">Zaidi</span>
+            <span className="text-textprimary">Syeda Zaidi</span>
+            <span aria-hidden="true" className="cursor-blink text-textprimary">_</span>
           </h1>
+          <p lang="ur" dir="rtl" className="urdu-name fade-up fade-up-delay-1 w-fit mx-auto mb-8">سیدہ زیدی</p>
 
           {/* Descriptor */}
-          <p className="fade-up fade-up-delay-2 font-body text-textsecondary text-xl md:text-2xl leading-relaxed max-w-2xl mb-10">
-            I build full-stack web apps and Android experiences with a focus on clean
-            architecture, thoughtful UX, and code that holds up in production.
-            MEng Software Engineering, Edinburgh Napier University.
+          <p className="fade-up fade-up-delay-2 font-body text-textsecondary text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto mb-10">
+            Final-year MEng Software Engineering student at Edinburgh Napier University.
           </p>
 
           {/* CTAs */}
-          <div className="fade-up fade-up-delay-3 flex flex-wrap gap-4">
+          <div className="fade-up fade-up-delay-3 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
             <button
-              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'auto' })}
               className="px-8 py-4 bg-accent text-bg font-display font-semibold text-base rounded hover:bg-accent/90 transition-all duration-200 tracking-wide"
             >
               View my work
             </button>
             <a
               href="mailto:syeda@zaidi.dev"
-              className="px-8 py-4 border border-border text-textprimary font-display font-semibold text-base rounded hover:border-accent hover:text-accent transition-all duration-200 tracking-wide"
+              className="editorial-link"
             >
               Get in touch
             </a>
           </div>
 
           {/* Social links */}
-          <div className="fade-up fade-up-delay-4 flex items-center gap-6 mt-12">
+          <div className="fade-up fade-up-delay-4 flex items-center justify-center flex-wrap gap-6 mt-10">
             <a
               href="https://github.com/zeez30"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-mono text-xs text-textsecondary hover:text-accent transition-colors tracking-wide"
+              className="editorial-link"
             >
               GitHub ↗
             </a>
@@ -80,14 +58,14 @@ export default function Hero() {
               href="https://www.linkedin.com/in/syeda-zaidi-16b3a0252/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-mono text-xs text-textsecondary hover:text-accent transition-colors tracking-wide"
+              className="editorial-link"
             >
               LinkedIn ↗
             </a>
             <span className="w-px h-4 bg-border" />
             <a
               href="mailto:syeda@zaidi.dev"
-              className="font-mono text-xs text-textsecondary hover:text-accent transition-colors tracking-wide"
+              className="editorial-link"
             >
               Email ↗
             </a>
@@ -96,7 +74,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll hint */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
         <span className="font-mono text-xs text-textsecondary tracking-widest">SCROLL</span>
         <div className="w-px h-8 bg-gradient-to-b from-textsecondary to-transparent" />
       </div>

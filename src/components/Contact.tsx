@@ -1,32 +1,34 @@
 export default function Contact() {
   return (
-    <section id="contact" className="py-28 border-t border-border">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center">
-          <span className="font-mono text-xs text-accent tracking-widest uppercase mb-4 block">
+    <section id="contact" className="page-grid">
+      <div className="section-space border-t border-border flex flex-col gap-10">
+        <div className="min-w-0 text-center">
+          <span className="section-label">
             04 / Contact
           </span>
-          <h2 className="font-display font-bold text-4xl md:text-5xl text-textprimary mb-6">
+          <h2 className="section-heading">
             Let's work together
           </h2>
-          <p className="font-body text-textsecondary text-xl leading-relaxed mb-10">
-            I'm actively looking for graduate software engineering roles from summer 2026.
-            If you're working on something interesting or just want to connect, my inbox is open.
+        </div>
+        <div className="min-w-0 w-full max-w-[62ch] mx-auto text-left text-base md:text-lg">
+          <p className="font-body text-textsecondary text-base md:text-lg leading-relaxed max-w-[62ch] mb-8">
+            I’m currently looking for graduate software engineering roles starting in 2027.
+            If you’re working on something interesting or would like to get in touch, I’d be happy to hear from you.
           </p>
 
           <a
             href="mailto:syeda@zaidi.dev"
-            className="inline-block px-10 py-5 bg-accent text-bg font-display font-semibold text-lg rounded hover:bg-accent/90 transition-all duration-200 tracking-wide mb-10"
+            className="inline-block max-w-full break-words text-xl sm:text-2xl text-textprimary underline decoration-textsecondary underline-offset-8 hover:decoration-accent transition-colors py-2 mb-8"
           >
             syeda@zaidi.dev
           </a>
 
-          <div className="flex justify-center gap-8 pt-8 border-t border-border">
+          <div className="flex flex-wrap gap-8">
             <a
               href="https://github.com/zeez30"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-mono text-sm text-textsecondary hover:text-accent transition-colors"
+              className="editorial-link"
             >
               GitHub ↗
             </a>
@@ -34,7 +36,7 @@ export default function Contact() {
               href="https://www.linkedin.com/in/syeda-zaidi-16b3a0252/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-mono text-sm text-textsecondary hover:text-accent transition-colors"
+              className="editorial-link"
             >
               LinkedIn ↗
             </a>

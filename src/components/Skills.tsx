@@ -2,33 +2,33 @@ import { skillGroups } from '../data';
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-28 border-t border-border">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="mb-14">
-          <span className="font-mono text-xs text-accent tracking-widest uppercase mb-4 block">
+    <section id="skills" className="page-grid">
+      <div className="section-space border-t border-border">
+        <div className="mb-10 md:mb-14 text-center">
+          <span className="section-label">
             02 / Skills
           </span>
-          <h2 className="font-display font-bold text-4xl md:text-5xl text-textprimary">
+          <h2 className="section-heading">
             What I work with
           </h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-10">
           {skillGroups.map((group) => (
-            <div key={group.label} className="border-gradient rounded-lg p-8 bg-surface">
-              <h3 className="font-display font-semibold text-base text-accent tracking-wide mb-5 uppercase">
+            <div key={group.label} className="border-t border-border pt-6">
+              <h3 className="font-mono font-bold text-base text-accent mb-5">
                 {group.label}
               </h3>
-              <div className="flex flex-wrap gap-2">
+              <ul className="space-y-2">
                 {group.skills.map((skill) => (
-                  <span
+                  <li
                     key={skill}
-                    className="font-mono text-sm px-4 py-2 rounded border border-border text-textsecondary hover:border-accent hover:text-accent transition-colors cursor-default"
+                    className="font-mono text-base text-textsecondary leading-relaxed"
                   >
                     {skill}
-                  </span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           ))}
         </div>
